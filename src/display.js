@@ -3,12 +3,13 @@
 var eachItem = require('./eachItem');
 
 /**
- * Compute a `display` property regarding of access display
+ * Compute a `display` property in regards of `display.access`
  * configuration.
  */
 module.exports = function (ctx) {
   var shouldBeDisplayed = function (item) {
-    var displayItemAccess = ctx.view.display.access.indexOf(item.access[0]) !== -1;
+    var displayAccess = ctx.view.display.access;
+    var displayItemAccess = displayAccess ? (displayAccess.indexOf(item.access[0]) !== -1) : false;
     var isAlias = item.alias;
     var displayAlias = ctx.view.display.alias;
 
