@@ -2,20 +2,26 @@
   "name": "sassdoc-extras",
   "description": "SassDoc's Toolbelt",
   "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SassDoc/sassdoc-extra.git"
-  },
   "keywords": [
     "sassdoc",
     "index",
     "themes"
   ],
-  "license": "MIT",
+  "homepage": "http://sassdoc.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SassDoc/sassdoc-extra.git"
+  },
   "bugs": {
     "url": "https://github.com/SassDoc/sassdoc-extra/issues"
   },
-  "homepage": "http://sassdoc.com",
+  "license": "MIT",
+  "files": [
+    "src",
+    "index.js",
+    "LICENSE.md",
+    "README.md"
+  ],
   "dependencies": {
     "marked": "^0.3.0",
     "lodash.foreach": "^2.4.1"
