@@ -46,8 +46,8 @@ module.exports = function (ctx) {
         item.htmlThrows = item.throws.map(md);
       }
 
-      if ('todo' in item) {
-        item.htmlTodo = item.todo.map(md);
+      if ('todos' in item) {
+        item.htmlTodos = item.todos.map(md);
       }
 
       if ('returns' in item) {
