@@ -14,8 +14,8 @@
             "author":[
                "Hugo Giraudel"
             ],
-            "todo":[
-               "Todo description"
+            "todos":[
+               "Todos description"
             ],
             "parameters":[
                {
@@ -54,8 +54,8 @@
             "htmlThrows":[
                "<p>Throws description</p>\n"
             ],
-            "htmlTodo":[
-               "<p>Todo description</p>\n"
+            "htmlTodos":[
+               "<p>Todos description</p>\n"
             ],
             "htmlReturns":[
                {
