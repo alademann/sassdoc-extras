@@ -1,11 +1,13 @@
 {
   "name": "sassdoc-extras",
   "description": "SassDoc's Toolbelt",
-  "version": "1.0.3-1",
+  "version": "2.3.0-1",
   "keywords": [
     "sassdoc",
     "index",
-    "themes"
+    "themes",
+    "extras",
+    "tools"
   ],
   "homepage": "http://sassdoc.com",
   "repository": {
@@ -23,13 +25,15 @@
     "README.md"
   ],
   "dependencies": {
-    "marked": "^0.3.0",
-    "lodash.foreach": "^2.4.1"
+    "marked": "^0.3.0"
   },
   "devDependencies": {
-    "mocha": "^1.21.4"
+    "jshint": "^2.6.0",
+    "mocha": "^2.1.0"
   },
   "scripts": {
+    "lint": "jshint index.js src/*.js test/*.js --verbose",
+    "pretest": "npm run lint",
     "test": "mocha test/*.test.js"
   }
 }
